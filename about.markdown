@@ -21,6 +21,13 @@ I look forward to continue developing my career in software industry, contributi
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
 ##### [Oct 2022 - present]
 
+HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 - 10 minutes by mobile application. This product is builded from scratch on AWS serverless.
+
+* Design and build backend microservices (by _**Go**_ language) run on _**AWS Lambda**_.
+* Analyze business requirement and design solution with serverless service like _**API Gateway, Lambda, SNS, SQS,...**_.
+* Manage task, take care the member of team to meet deadline.
+* Setup _**CI/CD**_ pipeline with _**Jenkin**_ to build and deploy to _**AWS Serverless**_.
+* Monitor and maintenance the systems, enhance performance.
 
 ### **Senior Developer**
 ---
