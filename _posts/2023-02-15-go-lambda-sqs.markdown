@@ -23,3 +23,5 @@ Và AWS cũng cung cấp cho chúng ta 1 giải pháp tốt hơn khi cần xử 
 Các bạn có thể xem thêm tài liệu của AWS [tại đây!](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-throughput-horizontal-scaling-and-batching.html)
 
 Và ngoài việc áp dụng SQS Message Batch khi gửi nhận từ SQS, chúng ta có thể tăng tốc độ xử lý batch message trong 1 Lambda function bằng cách triển khai concurrency hanlder. Như vậy với 1 batch message nhận được từ SQS, Lambda function cũng sẽ xử lý đồng thời các message trong batch message.
+
+will update code soon.
