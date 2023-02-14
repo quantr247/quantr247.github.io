@@ -1,18 +1,17 @@
 ---
 layout: post
-title:  "Tối ưu hệ thống với AWS Lambda + SQS batch message"
+title:  "Serverless: Tối ưu hệ thống với AWS Lambda + SQS batch message"
 date:   2023-02-13 15:54:02 +0700
 categories: serverless
 ---
 
-![image1](https://blog.knoldus.com/wp-content/uploads/2022/05/image-3-1.png)
-_Photo by [Naincy Kumari](https://blog.knoldus.com/author/naincykumariknoldus/) at [knoldus](https://blog.knoldus.com/how-to-schedule-a-lambda-function-using-amazon-eventbridge/)_
+![image1](https://raw.githubusercontent.com/quantr247/go-lambda-sqs-example/master/resources/images/architecture.png)
 
 Khi phát triển hệ thống back-end cho ứng dụng, hầu hết chúng ta đều gặp các yêu cầu xử lý dữ liệu theo 1 thời gian biểu nào đó. AWS cung cấp cho chúng ta **EventBridge** và **Lambda** để hiện thực hóa cronjob theo thời gian biểu định sẵn (_schedule expression_). 
 
 Tuy nhiên, khi **Lambda** function thực hiện query dữ liệu từ DB/file để xử lý, số lượng data cần xử lý có thể sẽ rất lớn --> dẫn tới việc **Lambda** sẽ vượt ngưỡng timeout 15 phút. 
 
-![image2](https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2021/11/09/sqs1.png)
+![image2](https://raw.githubusercontent.com/quantr247/go-lambda-sqs-example/master/resources/images/lambda-scale.png)
 
 Để giải quyết vấn đề này, chúng ta có thể kết hợp cronjob Lambda cùng với SQS để tăng tốc việc xử lý data được query từ cronjob Lambda. Khi SQS nhận được data message từ cronjob Lambda, SQS sẽ trigger Lambda để xử lý message. Với việc Lambda hỗ trợ cơ chế autoscaling, các message trong SQS sẽ được xử lý đồng thời bởi các Lambda function, giúp cho thời gian xử lý lượng lớn data được giảm xuống đáng kể. 
 
