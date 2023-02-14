@@ -21,7 +21,7 @@ Và AWS cũng cung cấp cho chúng ta 1 giải pháp tốt hơn khi cần xử 
 
 Và ngoài việc áp dụng SQS Message Batch khi gửi nhận từ SQS, chúng ta có thể tăng tốc độ xử lý batch message trong 1 Lambda function bằng cách triển khai concurrency hanlder. Như vậy với 1 batch message nhận được từ SQS, Lambda function cũng sẽ xử lý đồng thời các message trong batch message.
 
-Với việc triển khai giải pháp như trên, chúng ta có thể đạt được 2 mục đích:
+Với việc triển khai giải pháp như trên, chúng ta có thể đạt được lợi ích:
 * Tăng tốc độ xử lý batch trong hệ thống
 * Tiết kiệm resources của hệ thống
 * Tiết kiệm chi phí do giảm số lượng request gửi vào SQS cũng như giảm dung lượng của message
