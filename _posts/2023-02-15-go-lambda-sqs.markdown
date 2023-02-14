@@ -2,6 +2,7 @@
 layout: post
 title:  "Serverless: Tối ưu việc xử lý batch data với AWS Lambda + SQS batch message"
 date:   2023-02-13 15:54:02 +0700
+tag: serverless
 categories: serverless
 ---
 
@@ -19,7 +20,7 @@ Nhưng khi triển khai SQS, tôi nhận thấy rằng việc truyền nhận d�
 
 Và AWS cũng cung cấp cho chúng ta 1 giải pháp tốt hơn khi cần xử lý lượng lớn data, đó chính là [SQS Message Batch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html). Với số lượng tối đa 10 message trong 1 request gửi tới SQS, chúng ta có thể giảm thời gian xử lý data.
 
-Và ngoài việc áp dụng SQS Message Batch khi gửi nhận từ SQS, chúng ta có thể tăng tốc độ xử lý batch message trong 1 Lambda function bằng cách triển khai concurrency hanlder. Như vậy với 1 batch message nhận được từ SQS, Lambda function cũng sẽ xử lý đồng thời các message trong batch message.
+Và ngoài việc áp dụng SQS Message Batch khi gửi nhận từ SQS, chúng ta có thể tăng tốc độ xử lý batch message trong 1 Lambda function bằng cách triển khai concurrency handler. Như vậy với 1 batch message nhận được từ SQS, Lambda function cũng sẽ xử lý đồng thời các message trong batch message.
 
 Với việc triển khai giải pháp như trên, chúng ta có thể đạt được lợi ích:
 * Tăng tốc độ xử lý batch trong hệ thống
@@ -27,6 +28,7 @@ Với việc triển khai giải pháp như trên, chúng ta có thể đạt đ
 * Tiết kiệm chi phí do giảm số lượng request gửi vào SQS cũng như giảm dung lượng của message
 
 Các bạn có thể tham khảo tài liệu của AWS:
+
 [Batch action](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-batch-api-actions.html)
 
 [Send Batch Message API Document](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html)
