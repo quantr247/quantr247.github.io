@@ -28,5 +28,7 @@ Với việc triển khai giải pháp như trên, chúng ta có thể đạt đ
 
 Các bạn có thể tham khảo tài liệu của AWS:
 [Batch action](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-batch-api-actions.html)
+
 [Send Batch Message API Document](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html)
+
 [Amazon Simple Queue Service](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
