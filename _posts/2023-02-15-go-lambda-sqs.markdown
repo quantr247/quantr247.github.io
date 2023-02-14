@@ -2,9 +2,15 @@
 layout: post
 title:  "Serverless: Tối ưu việc xử lý batch data với AWS Lambda + SQS batch message"
 date:   2023-02-13 15:54:02 +0700
-tag: serverless
+tags: 
+- Serverless
 categories: serverless
 ---
+
+{% if post.tags.size > 0 %}
+  Tag{% if post.tags.size > 1 %}s{% endif %}:
+  {{ post.tags | sort | join: ", " }}
+{% endif %}
 
 ![image1](https://raw.githubusercontent.com/quantr247/go-lambda-sqs-example/master/resources/images/architecture.png)
 
