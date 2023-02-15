@@ -6,11 +6,6 @@ tags: serverless
 categories: serverless
 ---
 
-{% if post.tags.size > 0 %}
-  Tag{% if post.tags.size > 1 %}s{% endif %}:
-  {{ post.tags | sort | join: ", " }}
-{% endif %}
-
 ![image1](https://raw.githubusercontent.com/quantr247/go-lambda-sqs-example/master/resources/images/architecture.png)
 
 Khi phát triển hệ thống back-end cho ứng dụng, hầu hết chúng ta đều gặp các yêu cầu xử lý dữ liệu theo 1 thời gian biểu nào đó. AWS cung cấp cho chúng ta **EventBridge** và **Lambda** để hiện thực hóa cronjob theo thời gian biểu định sẵn (_schedule expression_). 
