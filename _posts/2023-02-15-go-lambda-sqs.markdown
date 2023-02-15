@@ -2,7 +2,7 @@
 layout: post
 title:  "Serverless: Tối ưu việc xử lý batch data với AWS Lambda + SQS batch message"
 date:   2023-02-13 15:54:02 +0700
-tags: serverless
+tag-name: serverless
 categories: serverless
 ---
 
