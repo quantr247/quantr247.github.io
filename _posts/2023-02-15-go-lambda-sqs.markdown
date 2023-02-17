@@ -174,6 +174,8 @@ func _run()_ sẽ thực hiện các bước sau:
 	}
 {% endhighlight %}
 
+[**Full source code**](https://github.com/quantr247/go-lambda-sqs-example)
+
 ### **Deploy**
 
 Tiến hành cấu hình SQS và deploy code của 2 Lambda function lên môi trường AWS Serverless, ở bước deploy này bạn có thể tìm hiểu các hướng dẫn trên internet nhé.
