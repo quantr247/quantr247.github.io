@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Serverless: Tối ưu việc xử lý batch data với AWS Lambda + SQS batch message"
-date:   2023-02-15 15:54:02 +0700
+title:  "Serverless: (Golang) Tối ưu việc xử lý batch data với AWS Lambda + SQS batch message"
+date:   2023-02-15 11:00:00 +0700
 tags: serverless
 categories: serverless
 ---
