@@ -194,7 +194,7 @@ OK done. Sau 5 phút chờ trigger lambda cronjob, ta sẽ nhận được kết
 
 ## **Tổng kết**
 ---
-
+\
 Với việc triển khai giải pháp như trên, chúng ta có thể đạt được lợi ích:
 * Tăng tốc độ xử lý batch data trong hệ thống
 * Tiết kiệm resources của hệ thống
@@ -206,7 +206,7 @@ Chúc bạn làm việc hiệu quả :)
 
 ### **Bạn có thể tham khảo thêm tài liệu của AWS**
 ---
-
+\
 [Batch action](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-batch-api-actions.html)
 
 [Send Batch Message API Document](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html)
