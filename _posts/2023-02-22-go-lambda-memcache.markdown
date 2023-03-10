@@ -180,6 +180,9 @@ func getData(inMemoryCache inmemcache.InMemCache) (ExampleData, error) {
 
 * Trong function getData ở trên, tôi sẽ get data from global variable (in-memory cache), nếu trong in-memory cache mà key không tồn tại thì sẽ gọi function get data từ DB. Và nếu trong in-memory cache có data của cache key, tôi sẽ kiểm tra expired time của key để tiến hành delete key khỏi in-memory cache. Lý do đơn giản là vì nếu có nhiều request liên tục vào Lambda, **execution environment** sẽ không bị terminate, có nghĩa là global variable vẫn lưu trữ data cũ. Nên chúng ta cần có 1 expired time để data của key trong in-memory cache sẽ được cập nhật mới sau 1 khoảng thời gian.
 
+\
+[**Full source code**](https://github.com/quantr247/golang-lambda-inmemcache-example)
+
 ## **Tổng kết**
 ---
 \
