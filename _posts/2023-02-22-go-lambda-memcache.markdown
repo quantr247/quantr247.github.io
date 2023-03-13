@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Serverless: (Golang) Giảm duration time của AWS Lambda bằng caching với Global variables"
+title:  "Serverless: (Go) Giảm duration time của AWS Lambda bằng caching với Global variables"
 date:   2023-02-22 11:00:00 +0700
 tags: serverless
 categories: serverless
