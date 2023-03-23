@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "Git: Quản lý version code hiệu quả với Git-flow phần 1"
+date:   2023-03-20 11:00:00 +0700
+tags: git
+categories: git
+---
+\
+Khi bắt tay vào phát triển dự án phần mềm, một trong những việc đầu tiên chúng ta cần quan tâm đó là việc lưu trữ, quản lý code như thế nào để hiệu quả. Đặc biệt khi mà dự án có sự tham gia của 1 team, source code được phát triển đồng thời bởi nhiều thành viên trong team. Nếu chúng ta không có 1 quy trình/flow quản lý code hiệu quả, chắc hẳn sẽ dẫn tới việc conflict, mất code khi tiến hành merge. Hay các bạn đã gặp phải tình huống khi cần hotfix trên production, nhưng không biết phải hotfix và release trên branch nào, bởi vì không biết source code ở branch nào là latest trên production. 
+
+Tôi sẽ giới thiệu với các bạn về cách quản lý code mà tôi thường áp dụng trong team, hay đơn giản gọi là git-flow.
+
+## **Branch chính**
+
+Thông thường, về mặt tổ chức môi trường của 1 dự án sẽ có các môi trường tương ứng với quy trình phát triển ứng dụng của dự án:
+* SIT: môi trường tích hợp hay dev test. Ví dụ phía back-end sẽ deploy lên môi trường SIT để team front-end có thể integrate API, hoặc dùng để dev có thể tự test trước.
+* UAT: môi trường test nghiệm thu. Sau khi BE và FE đã dev và integrate xong, code sẽ được deploy lên môi trường UAT để team QC/Product có thể tham gia vào test để nghiệm thu sản phẩm.
+* Pilot: môi trường pre-prod. Khi 1 feature được nghiệm thu UAT xong, trước khi release thực tế, code sẽ được đóng gói và deploy lên môi trường Pilot để test 1  round, nếu ok thì code sẽ được release trên môi trường Production.
+* Production: môi trường customer/user sử dụng thực tế.
+
+Dựa vào các môi trường mà hệ thống có, tôi sẽ chia ra các branch chính như sau:
+
+![main_branch](/assets/git/main_branch.png)\
+\
+Khi tạo 1 repository mới, main/master sẽ là branch gốc. Từ branch main/master này, tôi sẽ tạo thêm các branch tương ứng cho các môi trường.
+
+## **Develop new feature**
+
+Sau khi đã có được các branch chính tương ứng với các môi trường của ứng dụng, ta sẽ bắt đầu develop 1 feature mới. Chúng ta cần nhớ rằng, tất cả các feature bắt đầu dev phải được tạo từ branch develop.
+
+![develop_new_feature](/assets/git/develop_new_feature.png)\
+\
+Tương tự như phần trên tôi đã nói, mỗi branch sẽ tương ứng với 1 môi trường. Nên branch **example feature** sẽ tương ứng với môi trường **local**, hay có thể hiểu là trên máy tính cá nhân của dev. Nghĩa là sau khi code, chúng ta có thể test code trên máy local trước khi push code và merge vào branch **develop** để deploy lên môi trường SIT.
+
+## **UAT feature**
+
+![uat_feature](/assets/git/uat_feature.png)
+
+Để có thể nghiệm thu UAT feature, chúng ta có thể merge code từ **develop** branch vào **staging** bracnh, và tiến hành deploy code từ **staging** branch lên môi trường UAT. Nên nhớ rằng chúng ta chỉ bàn giao feature để nghiệm thu UAT khi đã hoàn thành dev integrate ở **develop** branch và test ok, để đảm bảo chất lượng code tốt nhất khi được nghiệm thu.
+
+Tuy nhiên, nếu khi test UAT có phát sinh bug, chúng ta sẽ fix bug ở đâu?
+
+Để đơn giản thì thông thường chúng ta có thể tạo ra 1 **fix bug** branch từ **staging** brach, sau khi fix xong sẽ merge lại vào **staging** branch để test UAT lại. Nhưng tôi khuyên bạn tốt nhất nên fix bug trên **example feature** branch trước, deploy lên môi trường **SIT** để test trước khi merge vào **staging** branch. Ngoài ra, sẽ giúp ích rất nhiều cho bạn khi cần cherry-pick sau này. (Tôi sẽ chia sẻ ở post sau)
+
+## **Release feature**
+
+![release_feature](/assets/git/release_feature.png)
+
+Khi feature đã được nghiệm thu UAT xong, feature sẽ được release lên môi trường production cho khách hàng sử dụng. Tương tự như bước uat, chúng ta sẽ merge code từ **staging** branch vào **release** branch, đóng gói, đánh **tag** và tiến hành deploy lên môi trường **production**. 
+
+Release feature thành công lên môi trường **production**, chúng ta cần merge code từ **release** branch vào **main/master** branch. Bước này để control được việc code ở **main/master** branch luôn là code latest trên **production**.
+
+## **Hotfix production**
+
+![hotfix](/assets/git/hotfix.png)
+
+Và vấn đề cuối cùng, nếu sau khi release có bug xảy ra, chúng ta có thể hotfix gấp trên **release** branch, đóng gói, đánh **tag** và deploy lại lên môi trường **production**. Sau đó merge lại code vào **main/master** branch.
+
+## **Tổng kết**
+---
+\
+Với việc có một git-flow chi tiết, chúng ta sẽ dễ dàng control được code một cách rõ ràng, đảm bảo chất lượng code là tốt nhất khi đã được release cho khách hàng sử dụng. 
+
+Ngoài ra, khi team có biến động nhân sự thì những thành viên mới trong team cũng dễ dàng biết được code latest trên **production** là ở đâu, thuận tiện cho việc hotfix hay tiếp tục develop new feature.
+
+Tuy nhiên, đây chỉ mới ra git-flow cơ bản, vì khi triển khai 1 dự án, bạn chắc chắn sẽ gặp các tình huống như:
+* Nhiều feature mới cùng được develop tại 1 thời điểm, bạn phải đồng bộ code như thế nào?
+* Feature A được merge vào **staging** branch trước nhưng chưa được pass nghiệm thu UAT, Feature B được merge vào **staging** branch sau nhưng đã pass UAT và cần release. Vậy bạn cần phải làm gì để khi release không dính code của Feature A?
+
+Bạn có thể tham khảo cách giải quyết các vấn đề này [tại đây]({% post_url 2023-03-23-git-flow_2 %})
+
+Chúc bạn làm việc hiệu quả :)
+
+## **Thông tin tham khảo**
+---
+\
+[Git Documents](https://git-scm.com/doc)

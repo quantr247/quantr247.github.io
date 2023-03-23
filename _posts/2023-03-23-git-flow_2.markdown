@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Git: Quản lý version code hiệu quả với Git-flow phần 2"
+date:   2023-03-23 11:00:00 +0700
+tags: git
+categories: git
+---
+\
+Ở phần trước, tôi đã giới thiệu với bạn về git-flow cơ bản. Tuy nhiên, git-flow như vậy là chưa đủ khi phát triển dự án thực tế, vì có nhiều trường hợp phát sinh:
+* Nhiều feature mới cùng được develop tại 1 thời điểm, cần phải đồng bộ code thường xuyên để tránh conflict.
+* Có nhiều feature được dev đồng thời, nhưng chỉ có 1 feature pass UAT để release, lúc này không thể merge cả **staging** branch vào **release** branch được...
+
+Trong phần tiếp theo, tôi sẽ giới thiệu với bạn thêm các solution khác để giải quyết những vấn đề trên.
+
+## **Rebase đồng bộ code**
+
+Chắc hẳn các bạn cũng đã bị conflict code và phải resolve conflict khi merge code từ **feature** branch vào **develop** branch rồi đúng không. Và khi resolve conflict xong, trên **develop** branch sẽ xuất hiện 1 commit resolve conflict. 
+
+Mặc dù commit resolve conflict này là phải có, nhưng theo quan điểm của tôi thì nó hơi thừa, sẽ gây rác trong git log history của branch. Vậy để tránh việc xuất hiện commit resolve conflict này, tôi sẽ sử dụng git rebase để giải quyết vấn đề này.
+
+![develop_multiple_feature](/assets/git/develop_multiple_feature.png)\
+\
+Như bạn thấy, 2 feature (example1 và example2) cùng được checkout từ **develop** branch tại 1 thời điểm, **example2 feature** được dev xong và merge vào **develop** trước. Nếu tại **example1 feature** branch, ta edit trong cùng file mà **example2 feature** đã merge vào **develop**, thì khi merge từ **example1 feature** vào **develop** sẽ bị conflict và phải resolve conflict.
+
+Thay vào đó, tại **example1 feature** tôi sẽ sử dụng **git rebase develop** để đồng bộ code mới nhất từ **develop**, có nghĩa là commit ở **example2 feature** sẽ được thêm vào **example1 feature**, từ đó sẽ tránh được conflict xảy ra khi merge **example1 feature** vào **develop**. Bạn có thể tham khảo chi tiết cách rebase mà tôi sử dụng tại đây.
+
+## **Vấn đề khi merge branch chính**
+
+![uat_multiple_feature](/assets/git/uat_multiple_feature.png)\
+\
+Giả sử feature **example2** được dev xong và merge vào **develop** branch nhưng chưa được front-end integrate, sau đó feature **example1** mới được dev xong và merge vào **develop** branch. Khi **example1** đã được integrate và pass dev test, ta cần đưa code lên môi trường UAT để test nghiệm thu. 
+
+Như ở post trước tôi đã nói, nếu bạn merge code từ **develop** branch vào **staging** branch để đưa feature **example1** lên UAT, thì những commit của feature **example2** cũng được đưa vào **staging** branch luôn. Trong khi feature **example2** chưa được pass dev test ở môi trường SIT.
+
+![release_multiple_feature](/assets/git/release_multiple_feature.png)\
+\
+Vấn đề tương tự khi bạn muốn release feature **example1** nhưng feature **example2** chưa được nghiệm thu UAT, khi merge code bạn sẽ control được những gì sẽ được release lên môi trường **production**, dẫn tới việc phát sinh bug, gây khó khăn cho việc hotfix.
+
+Để giải quyết vấn đề này, tôi sẽ sử dụng git cherry-pick.
+
+## **Cherry-pick**
+
+![cherry-pick-release-feature](/assets/git/cherry-pick-release-feature.png)\
+\
+Khi cần release 1 feature, tôi thường checkout ra 1 sub branch từ **release** branch, sau đó cherry-pick từng commit từ **example1 feature** branch theo thứ tự thời gian vào sub branch đó, rồi mới tiến hành merge vào **release** branch. Làm như vậy sẽ dễ control code hơn, cũng như nếu có lỗi hay vấn đề phát sinh khi cherry-pick, tôi chỉ cần delete sub branch đi và tạo 1 sub branch khác để cherry-pick lại cũng đc, nhẹ đầu hơn rất nhiều :))))
+
+Với cherry-pick, bạn sẽ control được từng commit mà bạn release lên **production**, sẽ không có những commit mà bạn không biết, hay những feature chưa được pass test như vấn đề tôi đã nói ở trên.
+
+## **Git-flow tổng quát**
+
+![cherry-pick](/assets/git/cherry-pick.png)
+
+## **Tổng kết**
+---
+\
+Với những nội dụng tôi đã chia sẻ, hi vọng sẽ giúp ích cho bạn trong quá trình quản lý code cho dự án. Khi các bạn có quy trình, git-flow quản lý code chặt chẽ ngay từ đầu, sẽ giúp bạn tránh phải khá nhiều vấn đề phát sinh sau này.
+
+Chúc bạn làm việc hiệu quả :)
+
+## **Thông tin tham khảo**
+---
+\
+[Git Documents](https://git-scm.com/doc)
