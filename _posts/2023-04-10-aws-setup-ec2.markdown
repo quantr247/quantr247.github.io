@@ -14,25 +14,34 @@ EC2 là một dịch vụ computing cloud của AWS. Thay vì phải mua và set
 Để set up và launch được EC2 instance, bạn thực hiện theo các bước sau:
 
 1. Truy cập vào Amazon EC2 console: [EC2 console](https://console.aws.amazon.com/ec2/)
+
 2. Trong mục **Instances** ở cột bên trái, chọn **Instances** --> Xuất hiện trang **Instances** dashboard, chọn **Launch instances**
+
 3. Trong phần **Name and tags**, nhập tên của EC2 instances
+
 4. **Application and OS Images**
     * Chọn tab **Quick Start**
     * Chọn **Ubuntu**
     * **Amazon Machine Image (AMI)** chọn Ubuntu Server 22.04
     * **Architecture** chọn **64-bit (x86)**
+
 5. Trong phần **Instance type** chọn **t2.medium**
+
 6. Trong phần **Key pair**, chọn **Create new key pair** để tạo cặp key mới
     * Nhập tên cho key pair name
     * Chọn **Key pair type** là **RSA**
     * Chọn **Private key file format** là **.pem**
     * Chọn **Create key pair**, lưu file .pem lại nhé.
     * Chọn key pair name đã được tạo trong drop list
+
+
 7. **Network settings**: tạo security groups với tên là **SG for EC2 Ubuntu** dành cho EC2 instance từ mục **Security Groups**, với **Inbound rules** cho phép port 22 để SSH
     * Enbale **Auto-asign public IP** 
     * Chọn **Select existing security group**
     * List **Security groups** chọn **SG for EC2 Ubuntu**
+
 8. **Configure storage** nhập 30GiB
+
 9. Chọn **Launch instance**
 
 ## **Access EC2 instance và tạo user/pass**
@@ -43,20 +52,41 @@ Trước tiên, ta cần có public IP của instance. Trong **Instances** dashb
 Tiếp theo, ta sẽ ssh vào Ubuntu instance này từ máy tính local.
 
 1. Mở **Terminal** trên laptop/PC
-2. Chạy câu lệnh để truy cập vào EC2 instance: 
-    >ssh -i ubuntu.pem ubuntu@[Public IPv4 addess]
+2. Chạy câu lệnh để truy cập vào EC2 instance:
+```
+    $ ssh -i ubuntu.pem ubuntu@[Public IPv4 addess]
+```
     * ubuntu.pem: chính là file pem có được từ bước Generate key pair ở trên
     * user: ubuntu là user mặc định của Ubuntu instance
-3. Tạo user để access bằng user và password
 
-    >cd /etc/ssh\
-    sudo vim sshd_config\
-    Thay đổi giá trị của **PasswordAuthentication** thành **Yes**\
-    >sudo service ssh restart\
-    sudo adduser ec2ubuntu\
+3. Tạo user để access bằng user và password
+```
+    $ cd /etc/ssh
+    $ sudo vim sshd_config
+```
+    Thay đổi giá trị của **PasswordAuthentication** thành **Yes**
+```
+    $ sudo service ssh restart
+    $ sudo adduser ec2ubuntu
+```
     Nhập password cho user ec2ubuntu
 
 4. Mở **Terminal** mới trên laptop/PC và truy cập ssh vào **Public IPv4 addess** bằng user/pass đã tạo ở bước 3
+
+5. Add user vừa tạo vào sudo group. Login vào Ubuntu bằng pem file như ở bước 2.
+```
+    $ usermod -aG sudo ec2ubuntu 
+```
+
+6. Để không cần phải nhập password cho user ec2ubuntu khi chạy câu lệnh sudo. Ta sẽ add user vào file /etc/sudoers
+```
+    $ sudo visudo /etc/sudoers
+```
+    Kéo xuống dưới cùng và thêm dòng sau:
+```
+    ec2ubuntu ALL=(ALL) NOPASSWD:ALL
+``` 
+    Lưu lại file /etc/sudoers
 
 ## **Tổng kết**
 ---
