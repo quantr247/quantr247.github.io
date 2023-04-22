@@ -6,7 +6,7 @@ tags: ubuntu
 categories: ubuntu
 ---
 \
-Docker là 1 nền tảng cho phép chúng ta vận hành, triển khai ứng dụng theo cách container hóa. Với việc mỗi ứng dụng sẽ được chạy trong 1 môi trường container độc lập, không phụ thuộc vào nhau.
+Docker là 1 nền tảng cho phép chúng ta vận hành, triển khai ứng dụng theo cách container hóa. Mỗi ứng dụng sẽ được chạy trong 1 môi trường container độc lập, không phụ thuộc vào nhau.
 
 ## **Install Docker on Ubuntu server**
 
@@ -63,7 +63,7 @@ Trên đây tôi đã hướng dẫn các bạn cài đặt Docker trên Ubuntu 
 
 Chúc bạn làm việc hiệu quả :)
 
-### **Bạn có thể tham khảo thêm tài liệu của AWS**
+### **Tài liệu tham khảo**
 ---
 \
 [Install Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
