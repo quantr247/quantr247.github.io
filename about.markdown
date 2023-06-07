@@ -8,7 +8,7 @@ Hello,
 
 My name is **Quan** aka **QuanTR**. I am a developer from VietNam.
 
-I have many years of experience building backend systems in banking, meeting the requirements of the business as well as the system's performance. I also have experience of Devops, setup CI/CD pipeline.
+I have many years of experience building backend systems in banking, meeting the requirements of the business as well as the system's performance. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
 
 I look forward to continue developing my career in software industry, contributing to the success of the organization.
 
@@ -23,13 +23,13 @@ I look forward to continue developing my career in software industry, contributi
 
 HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 - 10 minutes by mobile application. This product is builded from scratch on AWS serverless.
 
-* Design and build backend microservices (by _**Go**_ language) run on _**AWS Lambda**_.
+* Design architecture and build backend microservices (by _**Go**_ language) run on _**AWS Lambda**_.
 * Analyze business requirement and design solution with serverless service like _**API Gateway, Lambda, SNS, SQS,...**_.
 * Manage task, take care the member of team to meet deadline.
 * Setup _**CI/CD**_ pipeline with _**Jenkin**_ to build and deploy to _**AWS Serverless**_.
 * Monitor and maintenance the systems, enhance performance.
 
-### **Senior Developer**
+### **Technical Expert**
 ---
 #### [VietCredit Finance Company](https://www.vietcredit.vn/)
 ##### [May 2022 - Oct 2022]
@@ -37,12 +37,12 @@ HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer c
 VietCredit is a finance company, they have plan to upgrade their systems to containerize and move to cloud. They need someone have experience about business of bank and tech stack like me.
 
 * Build the base of Go project
-* Install _**Kubernetes**_ and monitor tool for systems _**Prometheus, Grafana, Loki**_.
+* Design architecture, setup _**Kubernetes**_ and monitor tool for systems _**Prometheus, Grafana, Loki**_.
 * Setup _**CI/CD**_ pipeline with _**Jenkin**_ to build _**Docker**_ image and deploy application to _**Kubernetes**_.
-* Analyze business requirement and develop new feature to meet requirement.
+* Analyze business requirement, design solution and develop new feature to meet requirement.
 * Take care and training for junior, fresher developer.
 
-### **Senior Developer**
+### **Technical Expert**
 ---
 #### [Orient Commercial Joint Stock Bank (OCB)](https://go.ocb.com.vn/)
 ##### [May 2020 - May 2022]
@@ -57,7 +57,7 @@ With the experience of banking from previous bank, my mission at OCB was builded
 * Maintenance and research to enhance performance.
 * Take care and training for junior, fresher developer.
 
-### **Backend Developer**
+### **Senior Developer**
 ---
 #### [Saigon Thuong Tin Commercial Joint Stock Bank (Sacombank)](https://wwww.sacombank.com.vn) 
 ##### [Sep 2018 - May 2020]
