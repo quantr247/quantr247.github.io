@@ -16,14 +16,14 @@ I look forward to continue developing my career in software industry, contributi
 ## **Experience**
 ---
 
-### **Backend Golang Leader**
+### **Senior Developer**
 ---
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
 ##### [Oct 2022 - present]
 
 HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS**.
 
-* Design architecture and build backend microservices (by _**Go** language).
+* Design architecture and build backend microservices (by _**Go**_ language).
 * Analyze business requirement and design solution with **AWS** service.
 * Manage task, take care the member of team to meet deadline.
 * Setup _**CI/CD**_ pipeline with _**Jenkin**_ to build and deploy to _**AWS**_.
