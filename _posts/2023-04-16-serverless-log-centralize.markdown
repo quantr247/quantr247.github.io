@@ -2,7 +2,7 @@
 layout: post
 title:  "Serverless: (Go) Triển khai log tập trung cho AWS Lambda với giải pháp ship log từ Cloudwatch về Loki"
 date:   2023-04-16 11:00:00 +0700
-tags: serverless
+tags: serverless golang
 categories: serverless
 ---
 \

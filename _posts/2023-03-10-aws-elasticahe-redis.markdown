@@ -2,7 +2,7 @@
 layout: post
 title:  "Serverless: (Go) Cấu hình AWS ElastiCache Redis và tích hợp với AWS Lambda"
 date:   2023-03-10 11:00:00 +0700
-tags: serverless
+tags: serverless golang
 categories: serverless
 ---
 \

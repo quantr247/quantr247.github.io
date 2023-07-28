@@ -2,7 +2,7 @@
 layout: post
 title:  "Serverless: (Go) Hiểu về cách sử dụng Lambda với AWS SQS batch message. Report batch item failure cho Lambda function"
 date:   2023-06-30 11:00:00 +0700
-tags: serverless
+tags: serverless golang
 categories: serverless
 ---
 \
@@ -131,3 +131,5 @@ Chúc bạn làm việc hiệu quả :)
 [Using Lambda with Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
 
 [Understanding Amazon SQS and AWS Lambda Event Source Mapping for Efficient Message Processing](https://aws.amazon.com/blogs/apn/understanding-amazon-sqs-and-aws-lambda-event-source-mapping-for-efficient-message-processing/)
+
+[Implementing partial batch responses](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#services-sqs-batchfailurereporting)
