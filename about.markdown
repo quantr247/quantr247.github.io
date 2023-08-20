@@ -16,7 +16,7 @@ I look forward to continue developing my career in software industry, contributi
 ## **Experience**
 ---
 
-### **Senior Developer**
+### **Backend Team Leader**
 ---
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
 ##### [Oct 2022 - present]
@@ -57,7 +57,7 @@ With the experience of banking from previous bank, my mission at OCB was builded
 * Maintenance and research to enhance performance.
 * Take care and training for junior, fresher developer.
 
-### **Backend Developer**
+### **Software Developer**
 ---
 #### [Saigon Thuong Tin Commercial Joint Stock Bank (Sacombank)](https://wwww.sacombank.com.vn) 
 ##### [Sep 2018 - May 2020]
