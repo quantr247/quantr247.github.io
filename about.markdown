@@ -6,33 +6,44 @@ permalink: /about/
 
 Hello,
 
-My name is **Quan** aka **QuanTR**. I am a developer from VietNam.
+My name is **Nguyen Pham Trong Quan** aka **QuanTR**.
 
-I have many years of experience building backend systems run on-premises or on Cloud in banking/fin-tech, meeting the requirements of the business as well as the system's performance. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
+I have many years of experience building backend systems run on-premises and on Cloud in banking/fin-tech, meeting the requirements of the business as well as the system's performance since 2018. Especially, I have knowledge, deep understand in payment industry. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
 
 I look forward to continue developing my career in software industry, contributing to the success of the organization.
 
-
-## **Experience**
+### **Educations**
 ---
 
-### **Backend Team Leader**
+#### Ho Chi Minh City University of Technology (aka HCM City Bach Khoa University)
+[2011 - 2016]
+
+### **Licenses & certifications**
+---
+
+#### [AWS Certified Cloud Practitioner](https://www.credly.com/badges/eb82b676-e80c-4e6f-8805-42d40021aa7d/linked_in_profile)
+[Dec 2023 - Dec 2026]
+
+### **Experience**
+---
+
+#### **Backend Team Leader**
 ---
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
-##### [Oct 2022 - present]
+[Oct 2022 - present]
 
-HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS**.
+HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with microservices architecture.
 
 * Design architecture and build backend microservices (by _**Go**_ language).
 * Analyze business requirement and design solution with **AWS** service.
-* Manage task, take care the member of team to meet deadline.
+* Manage task, lead team about 5-6 member.
 * Setup _**CI/CD**_ pipeline with _**Jenkin**_ to build and deploy to _**AWS**_.
-* Monitor and maintenance the systems, enhance performance.
+* Monitor and maintenance the systems with __**Loki, Grafana**__, enhance performance.
 
-### **Senior Developer**
+#### **Senior Developer**
 ---
 #### [VietCredit Finance Company](https://www.vietcredit.vn/)
-##### [May 2022 - Oct 2022]
+[May 2022 - Oct 2022]
 
 VietCredit is a finance company, they have plan to upgrade their systems to containerize and move to cloud. They need someone have experience about business of bank and tech stack like me.
 
@@ -42,10 +53,10 @@ VietCredit is a finance company, they have plan to upgrade their systems to cont
 * Analyze business requirement, design solution and develop new feature to meet requirement.
 * Take care and training for junior, fresher developer.
 
-### **Senior Developer**
+#### **Senior Developer**
 ---
 #### [Orient Commercial Joint Stock Bank (OCB)](https://go.ocb.com.vn/)
-##### [May 2020 - May 2022]
+[May 2020 - May 2022]
 
 With the experience of banking from previous bank, my mission at OCB was builded the middleware systems for core card of bank. This systems expose the api for external systems connect with bank, like an open API of bank.
 
@@ -57,10 +68,10 @@ With the experience of banking from previous bank, my mission at OCB was builded
 * Maintenance and research to enhance performance.
 * Take care and training for junior, fresher developer.
 
-### **Software Developer**
+#### **Software Developer**
 ---
 #### [Saigon Thuong Tin Commercial Joint Stock Bank (Sacombank)](https://wwww.sacombank.com.vn) 
-##### [Sep 2018 - May 2020]
+[Sep 2018 - May 2020]
 
 After done my business at front-end side, I decided to switch to back-end side. Because I just wanna upgrade myself, learn more knowledge.
 
@@ -70,10 +81,10 @@ After done my business at front-end side, I decided to switch to back-end side. 
 * Integrate services with core bank by _**ISO8583**_ message.
 * Maintenance and research to enhance performance.
 
-### **Mobile Developer**
+#### **Mobile Developer**
 ---
 #### BeeKnight - A start up company
-##### [Jan 2016 - Jun 2018]
+[Jan 2016 - Jun 2018]
 
 As a fresher developer, I really like work at front-end application, especially mobile developer.
 
