@@ -6,7 +6,7 @@ permalink: /about/
 
 Hello,
 
-My name is **Nguyen Pham Trong Quan** aka **QuanTR**.
+My name is **Quan, Nguyen Pham Trong** aka **QuanTR**.
 
 I have many years of experience building backend systems run on-premises and on Cloud in banking/fin-tech, meeting the requirements of the business as well as the system's performance since 2018. Especially, I have knowledge, deep understand in payment industry. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
 
