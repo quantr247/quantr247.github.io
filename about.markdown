@@ -18,7 +18,7 @@ I look forward to continue developing my career in software industry, contributi
 #### Ho Chi Minh City University of Technology (aka HCM City Bach Khoa University)
 [2011 - 2016]
 
-### **Licenses & certifications**
+### **Certifications**
 ---
 
 #### [AWS Certified Cloud Practitioner](https://www.credly.com/badges/eb82b676-e80c-4e6f-8805-42d40021aa7d/linked_in_profile)
@@ -32,7 +32,7 @@ I look forward to continue developing my career in software industry, contributi
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
 [Oct 2022 - present]
 
-HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with microservices architecture.
+HDBank have a new project is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with serverless architecture.
 
 * Design architecture and build backend microservices (by _**Go**_ language).
 * Analyze business requirement and design solution with **AWS** service.
