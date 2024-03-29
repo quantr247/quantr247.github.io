@@ -8,7 +8,7 @@ Hello,
 
 My name is **Quan Nguyen Pham Trong**
 
-I have many years of experience building backend systems run on-premises and on Cloud in banking/fin-tech, meeting the requirements of the business as well as the system's performance since 2018. Especially, I have knowledge, deep understand in payment industry. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
+I have many years of experience building backend systems by **Golang** run on-premises and on Cloud in banking/fin-tech, meeting the requirements of the business as well as the system's performance since 2018. Especially, I have knowledge, deep understand in payment industry. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
 
 I look forward to continue developing my career in software industry, contributing to the success of the organization.
 
@@ -31,14 +31,13 @@ CardHub: Middleware systems for card services of bank
 * **Design Architecture**: microservices, serverless application with high availability and scalable distribute systems on _**AWS Cloud**_.
 * **Terraform**: Set up infrastructure and deploy application on _**AWS Cloud**_.
 * **Logging and tracing**: _**Loki**_ and _**Grafana**_ with distribute tracing to monitor systems.
-* **Git**: code version control with git flow.
 * **CICD**: CICD pipeline with _**Jenkins**_.
 * **Solution**: resolve technical problem. 
 
 **Backend Lead** - 
 Muadee: HDBank's new product is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with serverless architecture.
 
-* Design architecture and build backend microservices (by _**Go**_ language).
+* Design architecture and build backend microservices by _**Golang**_.
 * Analyze business requirement and design solution with **AWS** service.
 * Manage task, lead team about 5-6 member.
 * Define git flow to code version control.
