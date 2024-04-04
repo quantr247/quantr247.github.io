@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Go: Phân biệt giữa data race và race conditions trong race problem"
-date:   2024-03-10 11:00:00 +0700
+date:   2025-03-10 11:00:00 +0700
 tags: golang
 categories: golang
 ---
