@@ -12,9 +12,7 @@ I have many years of experience building backend systems by **Golang** run on-pr
 
 I look forward to continue developing my career in software industry, contributing to the success of the organization.
 
-**Email**: _quan.t.r247@gmail.com_\
-**Phone**: _+84 981665875_\
-**Address**: _Thu Duc City, Ho Chi Minh City, Viet Nam_
+**Address**: _Ho Chi Minh City, Viet Nam_
 
 ### **Experience**
 ---
