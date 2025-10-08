@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: QuanTR's blog
-email: quan.t.r247@gmail.com
+email: 
 description: >- # this means to ignore newlines until "baseurl:"
   In my career path, I have been learned more knowledge, 
   more tech stack to develop software application. I love what I do, 
@@ -27,7 +27,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: quantr247
-github_username:  0981665875
 
 # Build settings
 theme: minima
