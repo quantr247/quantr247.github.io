@@ -8,9 +8,9 @@ Hello,
 
 My name is **Quan, Nguyen Pham Trong**
 
-I have many years of experience building backend systems by **Golang** run on-premises and on Cloud in banking/fin-tech, meeting the requirements of the business as well as the system's performance since 2018. Especially, I have knowledge, deep understand in payment industry. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
+I have many years of experience building systems running on-premises and on Cloud in banking and fintech domain, meeting both business requirements and performance expectations since 2018. I have deep knowledge and understanding of the payment industry. I also have experience in Devops, setting up CI/CD pipelines, and designing system architectures.
 
-I look forward to continue developing my career in software industry, contributing to the success of the organization.
+I look forward to continuing my career in the software industry and contributing to the success of the organization.
 
 * **Address**: _Thu Duc, Ho Chi Minh City, Viet Nam_
 * **Phone**: _0981665875_
