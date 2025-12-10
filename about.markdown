@@ -33,7 +33,7 @@ I look forward to continuing my career in the software industry and contributing
 * Review technical solutions for complex issues and provide guidance or hands-on support to team members facing technical challenges.
 * Monitor and enhance system performance, proactively optimizing application stability, throughput, and resource usage.
 
-**Team size**: 10 members (backend, frontend, mobile)
+**Team size**: 10 members (backend, frontend, mobile) 
 **Tech stack**: Golang, ReactJS, Flutter, AWS cloud native, AWS serverless, Lambda, RDS, EKS, S3, Terrafrom, CICD,...
 
 **Projects**
