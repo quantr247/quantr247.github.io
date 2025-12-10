@@ -15,7 +15,7 @@ I look forward to continuing my career in the software industry and contributing
 * **Address**: _Thu Duc, Ho Chi Minh City, Viet Nam_
 * **Phone**: _0981665875_
 * **Email**: _quan.t.r247@gmail.com_
-* **YOB**: _1993_
+* **Year of birth**: _1993_
 
 ### **Experience**
 ---
