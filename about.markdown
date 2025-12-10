@@ -12,10 +12,10 @@ I have many years of experience building backend systems by **Golang** run on-pr
 
 I look forward to continue developing my career in software industry, contributing to the success of the organization.
 
-**Address**: _Thu Duc, Ho Chi Minh City, Viet Nam_
-**Phone**: _0981665875_
-**Email**: _quan.t.r247@gmail.com_
-**YOB**: _1993_
+* **Address**: _Thu Duc, Ho Chi Minh City, Viet Nam_
+* **Phone**: _0981665875_
+* **Email**: _quan.t.r247@gmail.com_
+* **YOB**: _1993_
 
 ### **Experience**
 ---
@@ -25,7 +25,7 @@ I look forward to continue developing my career in software industry, contributi
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
 [Oct 2022 - present]
 
-**Roles & Responsibilities** -
+**Roles & Responsibilities**
 * Analyze business requirements and design technical solutions to meet product and business objectives.
 * Architect system designs for applications with a strong focus on high availability (HA), scalability, and performance.
 * Take ownership of project delivery, ensuring timelines, scope, and quality are met.
@@ -36,7 +36,7 @@ I look forward to continue developing my career in software industry, contributi
 **Team size**: 10 members (backend, frontend, mobile)
 **Tech stack**: Golang, ReactJS, Flutter, AWS cloud native, AWS serverless, Lambda, RDS, EKS, S3, Terrafrom, CICD,...
 
-**Projects** -
+**Projects**
 * **Muadee by HDBank**:  HDBank's product is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with serverless architecture.
 * **Debt Collection Portal**: Debt Collection Portal is an internal project of HDBank, developed for the Debt Collection Department to support operational workflows. The system automates debt data collection and staff assignment, and integrates call-handling features to accelerate call execution while minimizing manual task management. As a result, the project significantly improved operational efficiency—up to 3x productivity.
 
@@ -92,19 +92,21 @@ At BeeKnight, I had been learned to develop applications on both Android (by _**
 
 ### **Certifications**
 ---
+#### [HashiCorp Certified: Terraform Associate (003)](https://www.credly.com/badges/2a293c44-2ea6-486f-8634-2df9f18e4d0a)
+[Apr 2024 - Apr 2026]
 
-#### [AWS Certified Cloud Practitioner](https://www.credly.com/badges/eb82b676-e80c-4e6f-8805-42d40021aa7d/linked_in_profile)
-[Dec 2023 - Jan 2027]
+#### [AWS Certified Developer – Associate](https://www.credly.com/badges/92fa19b8-f2c0-4c2a-8158-d3c8eb687c7b)
+[Mar 2024 - Mar 2027]
 
-#### [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/bbcc2729-6b7c-4124-8336-da2433ebcd4c/linked_in_profile)
+#### [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/bbcc2729-6b7c-4124-8336-da2433ebcd4c)
 [Jan 2024 - Jan 2027]
 
-#### [AWS Certified Developer – Associate](https://www.credly.com/badges/92fa19b8-f2c0-4c2a-8158-d3c8eb687c7b/linked_in_profile)
-[Mar 2024 - Mar 2027]
+#### [AWS Certified Cloud Practitioner](https://www.credly.com/badges/eb82b676-e80c-4e6f-8805-42d40021aa7d)
+[Dec 2023 - Jan 2027]
 
 ### **Educations**
 ---
 
-#### Ho Chi Minh City University of Technology (aka HCM City Bach Khoa University)
+#### Ho Chi Minh City University of Technology (HCM City Bach Khoa University)
 [2011 - 2016]
 
