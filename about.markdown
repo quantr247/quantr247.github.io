@@ -20,7 +20,7 @@ I look forward to continuing my career in the software industry and contributing
 ### **Experience**
 ---
 
-#### **Techical Leader**
+#### **Technical Leader**
 ---
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
 [Oct 2022 - present]
