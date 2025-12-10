@@ -40,6 +40,7 @@ I look forward to continuing my career in the software industry and contributing
 * **Muadee by HDBank**:  HDBank's product is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with serverless architecture.
 * **Debt Collection Portal**: Debt Collection Portal is an internal project of HDBank, developed for the Debt Collection Department to support operational workflows. The system automates debt data collection and staff assignment, and integrates call-handling features to accelerate call execution while minimizing manual task management. As a result, the project significantly improved operational efficiency—up to 3x productivity.
 
+---
 #### **Senior Developer**
 ---
 #### [VietCredit Finance Company](https://www.vietcredit.vn/)
@@ -53,6 +54,7 @@ VietCredit is a finance company, they have plan to upgrade their systems to cont
 * Analyze business requirement, design solution and develop new feature to meet requirement.
 * Take care and training for junior, fresher developer.
 
+---
 #### **Senior Developer**
 ---
 #### [Orient Commercial Joint Stock Bank (OCB)](https://go.ocb.com.vn/)
@@ -68,6 +70,7 @@ With the experience of banking from previous bank, my mission at OCB was builded
 * Maintenance and research to enhance performance.
 * Take care and training for junior, fresher developer.
 
+---
 #### **Software Developer**
 ---
 #### [Saigon Thuong Tin Commercial Joint Stock Bank (Sacombank)](https://wwww.sacombank.com.vn) 
@@ -81,6 +84,7 @@ After done my business at front-end side, I decided to switch to back-end side. 
 * Integrate services with core bank by _**ISO8583**_ message.
 * Maintenance and research to enhance performance.
 
+---
 #### **Mobile Developer**
 ---
 #### BeeKnight - A start up company
@@ -90,6 +94,7 @@ As a fresher developer, I really like work at front-end application, especially 
 
 At BeeKnight, I had been learned to develop applications on both Android (by _**Java**_ language) and iOS (by _**Swift**_ language) platform. Starting with simple application: call Rest API to server and show the status of traffic by CCTV, or an application use socket for chatting. I had can create many complex application which have more business, more screens, more animations,...
 
+---
 ### **Certifications**
 ---
 #### [HashiCorp Certified: Terraform Associate (003)](https://www.credly.com/badges/2a293c44-2ea6-486f-8634-2df9f18e4d0a)
@@ -104,6 +109,7 @@ At BeeKnight, I had been learned to develop applications on both Android (by _**
 #### [AWS Certified Cloud Practitioner](https://www.credly.com/badges/eb82b676-e80c-4e6f-8805-42d40021aa7d)
 [Dec 2023 - Jan 2027]
 
+---
 ### **Educations**
 ---
 
