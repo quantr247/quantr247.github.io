@@ -6,41 +6,39 @@ permalink: /about/
 
 Hello,
 
-My name is **Quan Nguyen Pham Trong**
+My name is **Quan, Nguyen Pham Trong**
 
 I have many years of experience building backend systems by **Golang** run on-premises and on Cloud in banking/fin-tech, meeting the requirements of the business as well as the system's performance since 2018. Especially, I have knowledge, deep understand in payment industry. I also have experience of Devops, setup CI/CD pipeline and design architecture for systems.
 
 I look forward to continue developing my career in software industry, contributing to the success of the organization.
 
-**Address**: _Ho Chi Minh City, Viet Nam_
+**Address**: _Thu Duc, Ho Chi Minh City, Viet Nam_
+**Phone**: _0981665875_
+**Email**: _quan.t.r247@gmail.com_
+**YOB**: _1993_
 
 ### **Experience**
 ---
 
-#### **Backend Lead | Tech Lead**
+#### **Techical Leader**
 ---
 #### [Ho Chi Minh City Development Joint Stock Commercial Bank (HDBank)](https://hdbank.com.vn/)
 [Oct 2022 - present]
 
-**Tech Lead** - 
-CardHub: Middleware systems for card services of bank
+**Roles & Responsibilities** -
+* Analyze business requirements and design technical solutions to meet product and business objectives.
+* Architect system designs for applications with a strong focus on high availability (HA), scalability, and performance.
+* Take ownership of project delivery, ensuring timelines, scope, and quality are met.
+* Plan, assign, and manage tasks within the development team to ensure smooth execution.
+* Review technical solutions for complex issues and provide guidance or hands-on support to team members facing technical challenges.
+* Monitor and enhance system performance, proactively optimizing application stability, throughput, and resource usage.
 
-* **Golang**: coding, review code from team member.
-* **Design Architecture**: microservices, serverless application with high availability and scalable distribute systems on _**AWS Cloud**_.
-* **Terraform**: Set up infrastructure and deploy application on _**AWS Cloud**_.
-* **Logging and tracing**: _**Loki**_ and _**Grafana**_ with distribute tracing to monitor systems.
-* **CICD**: CICD pipeline with _**Jenkins**_.
-* **Solution**: resolve technical problem. 
+**Team size**: 10 members (backend, frontend, mobile)
+**Tech stack**: Golang, ReactJS, Flutter, AWS cloud native, AWS serverless, Lambda, RDS, EKS, S3, Terrafrom, CICD,...
 
-**Backend Lead** - 
-Muadee: HDBank's new product is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with serverless architecture.
-
-* Design architecture and build backend microservices by _**Golang**_.
-* Analyze business requirement and design solution with **AWS** service.
-* Manage task, lead team about 5-6 member.
-* Define git flow to code version control.
-* Setup _**CI/CD**_ pipeline with _**Jenkin**_ to build and deploy to _**AWS**_.
-* Monitor and maintenance the systems with __**Loki, Grafana**__, enhance performance.
+**Projects** -
+* **Muadee by HDBank**:  HDBank's product is the Buy Now Pay Later(BNPL) application. Customer can register and have a credit limit to buy purchase item after 5 minutes of registration by mobile application. This product is builded from scratch on **AWS** with serverless architecture.
+* **Debt Collection Portal**: Debt Collection Portal is an internal project of HDBank, developed for the Debt Collection Department to support operational workflows. The system automates debt data collection and staff assignment, and integrates call-handling features to accelerate call execution while minimizing manual task management. As a result, the project significantly improved operational efficiency—up to 3x productivity.
 
 #### **Senior Developer**
 ---
